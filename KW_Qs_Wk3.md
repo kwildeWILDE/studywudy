@@ -14,7 +14,7 @@
 # Things to look at: 
 - Boussinesq approximation
 - Pope's Reynold's Decomposition 
-- p.d.f. --> with Gaussian fuctions
+~~- p.d.f. --> with Gaussian fuctions~~
 - Monte Carlo 
 - Wind farm optimization
  
