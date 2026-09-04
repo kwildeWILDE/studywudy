@@ -15,7 +15,9 @@
             **THIS IS THE REYNOLDS DECOMPOSITION**
         With the equation above, you can simplify equation and sub into the mean momentum equation that can eventually lead to an equation that looks very similar to the Navier-Stokes equatoin, aka **THE REYNOLODS EQUATIONS** 
             **HOWEVER** Even though The Reynolds equations and Navier-Stokes look similar and are equations that help determine turbulent or laminar flow, the **CRITICAL** difference is that the Reynolds equation take the **REYNOLDS STRESSORS** <uiuj> into consideration. 
-        - Since we now have a relationship between the reynolds decomposition and its similaraties to Navier-Stokes there is a possability the the Reynolds decomposition could be derived to find a magnitude values of the Reynolds number to determine if the flow has a high chance to become turbulent. 
+        - Since we now have a relationship between the reynolds decomposition and its similaraties to Navier-Stokes there is a possability the the Reynolds decomposition could be derived to find a magnitude values of the Reynolds number to determine the characteristic number of the flow. 
+            - The Reynolds number should be known prior before applying ANY equations related to atmospheric turbulence. 
+                - i.e., Similar to how you need to know the calculation of the Reynolds number to determine how fast is the flow, how large is the domain, what is the fluid [density?].
 
 4. In your 2025 NLR Tech Report about ASSIST + TROPoe for the linear, one-diemsional, gaussian example I understand how you were able to extend the orginal OE theorem into consideration of prior mean standard deviation and the linear calibration standard deviation (4.3); But I'm a bit confused on how you were able to get (4.4) by maximixing the left-hand side to get the most probable state condition on the observation. I think I might need to see an example of how that was done.   
     - Get more familiar with the p.d.f in satistics and the Monte Carlo in Gaussian functions 
