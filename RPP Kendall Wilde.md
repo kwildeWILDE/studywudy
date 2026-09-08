@@ -3,15 +3,15 @@
 
 #### Concepts to cover
 
--~~ Structure of the atmospheric boundary layer: surface layer, mixed layer, residual layer, stable nocturnal layer~~
+- ~~Structure of the atmospheric boundary layer: surface layer, mixed layer, residual layer, stable nocturnal layer~~
 
--~~ Turbulence basics: turbulent kinetic energy (TKE), eddies, Reynolds decomposition, turbulence intensity~~
+- ~~Turbulence basics: turbulent kinetic energy (TKE), eddies, Reynolds decomposition, turbulence intensity~~
 
--~~ Atmospheric stability: Monin–Obukhov similarity theory, Richardson number, Obukhov length~~
+- ~~Atmospheric stability: Monin–Obukhov similarity theory, Richardson number, Obukhov length~~
 
--~~ Wind shear and veer (vertical change in speed/direction) and their causes (surface friction, thermal stratification, low-level jets)~~
+- ~~Wind shear and veer (vertical change in speed/direction) and their causes (surface friction, thermal stratification, low-level jets)~~
 
--~~ Terrain and surface-roughness effects on near-surface flow; complex-terrain flow distortion~~
+- ~~Terrain and surface-roughness effects on near-surface flow; complex-terrain flow distortion~~
 
 - ~~Diurnal cycle of the ABL and its impact on turbulence/shear at hub height (~80–160 m)~~
 
@@ -22,7 +22,7 @@
 - Kaimal & Finnigan, *Atmospheric Boundary Layer Flows* — Ch. 1–3 
   
 #### Hands-on exercise
--~~ Create GitHub repo and get familiar with cloning, pulling, committing pushing~~
+-~~Create GitHub repo and get familiar with cloning, pulling, committing pushing~~
 
 - ~~Pull a public meteorological tower dataset (e.g., NREL [M2](https://midcdmz.nlr.gov/apps/day.pl?NWTC) tower at NWTC) with multi-level wind speed/direction/temperature.~~
 
@@ -40,7 +40,7 @@
 
   - ~~Scan strategies: VAD (velocity-azimuth display), DBS (Doppler beam swinging), staring/RHI~~
 
-  -~~ Dual-Doppler retrieval geometry for full 3D wind vectors~~ ( Might need to double check if I understand this)
+  -~~Dual-Doppler retrieval geometry for full 3D wind vectors~~ ( Might need to double check if I understand this)
 
   - ~~Sources of retrieval uncertainty: signal-to-noise ratio, beam spreading, assumption of flow homogeneity~~
   
@@ -49,11 +49,11 @@
 
 - **Thermodynamic profiling basics:**
 
-  -~~ Why temperature/humidity profiles matter for stability and turbine-load context, not just wind~~
+  -~~Why temperature/humidity profiles matter for stability and turbine-load context, not just wind~~
 
-  - Optimal estimation theory (Rodgers' framework) — the statistical backbone of TROPoe
+  - ~~Optimal estimation theory (Rodgers' framework) — the statistical backbone of TROPoe~~
   
- - TROPoe main workflow
+ - ~~TROPoe main workflow~~
 
 #### Core readings
 
@@ -65,7 +65,7 @@
 
 #### Hands-on exercise
 
-- In Python (xarray), load a TROPoe output file: plot retrieved temperature/humidity profile time-height cross-sections, and plot the associated uncertainty profiles.
+- In Python (xarray), load a TROPoe output file: plot retrieved temperature/humidity profile time-height cross-sections, and plot the associated uncertainty profiles. **(there are issues that I need to fix )**
 
 - Reproduce independently the dual-Doppler retrieval in CORSAIR (from [corsair/s19.lidar.z01.b0](https://wdh.energy.gov/ds/corsair/s19.lidar.z01.b0), [corsair/s40.lidar.z01.b0](https://wdh.energy.gov/ds/corsair/s40.lidar.z01.b0) to [corsair/fc.ddoppler.z01.c1](https://wdh.energy.gov/ds/corsair/fc.ddoppler.z01.c1))
 
@@ -99,27 +99,27 @@
 
 #### Concepts to cover
 
-- IEC 61400-1 design standard basics: design load cases (DLCs), normal vs. extreme wind conditions
+- ~~IEC 61400-1 design standard basics: design load cases (DLCs), normal vs. extreme wind conditions~~
 
-- Extreme Wind Speed Model (EWM) and Extreme Operating Gust (EOG); return-period wind speeds (50-year gust, etc.)
+- ~~Extreme Wind Speed Model (EWM) and Extreme Operating Gust (EOG); return-period wind speeds (50-year gust, etc.)~~
 
-- Turbulence intensity classes and their role in fatigue vs. extreme (ultimate) loads
+- ~~Turbulence intensity classes and their role in fatigue vs. extreme (ultimate) loads~~
 
-- Wind shear and veer profile effects on rotor loading (asymmetric loading across the rotor disk)
+- ~~Wind shear and veer profile effects on rotor loading (asymmetric loading across the rotor disk)~~
 
-- Low-level jets and their outsized contribution to extreme shear/turbulence events relevant to hub-height turbines
+- ~~Low-level jets and their outsized contribution to extreme shear/turbulence events relevant to hub-height turbines~~
 
-- Coherence and turbulence spectra (Kaimal spectrum) as inputs to load simulation tools
+- ~~Coherence and turbulence spectra (Kaimal spectrum) as inputs to load simulation tools~~
 
-- Brief intro to load-simulation tools: OpenFAST (NREL's aeroelastic simulation code) — just enough to know what it consumes (wind field input, e.g., from TurbSim) and produces (load time series)
+- ~~Brief intro to load-simulation tools: OpenFAST (NREL's aeroelastic simulation code) — just enough to know what it consumes (wind field input, e.g., from TurbSim) and produces (load time series)~~
 
 #### Core readings
 
-- IEC 61400-1 standard summary (an NREL or DNV technical summary is more digestible than the full standard)
+- ~~IEC 61400-1 standard summary (an NREL or DNV technical summary is more digestible than the full standard)~~
 
-- NREL TurbSim and OpenFAST user guides — just the introductory/overview sections
+- ~~NREL TurbSim and OpenFAST user guides — just the introductory/overview sections~~
 
-- A review paper connecting atmospheric extremes (shear, turbulence, LLJs) to turbine loading, if available from NWTC publications
+- ~~A review paper connecting atmospheric extremes (shear, turbulence, LLJs) to turbine loading, if available from NWTC publications~~
 
 #### Hands-on exercise
 
