@@ -2,20 +2,20 @@
 ## Presentation topic: A presentation to the MMSEI group on the overall CORSAIR dataset and some intresting weather/ wind evetns found in the dataset. 
 
 ##### Title Idea: 
-    " The User Experience on Analysing High Winds fr4p, CORSAIR Instruments "
+    " The User Experience on Analysing High Winds from CORSAIR Instruments "
 
 ###### Why?: 
-1. Here on the FC we have multiple remote sesnsing intrsuments that record atmopsheric characterists (i.e., tmeperature and wind), that we can asscess through the WDH. 
+1. Here on the FC we have multiple remote sesnsing intrsuments that record atmopsheric characterists (i.e., tmeperature and wind), that we can asscess through the WDH (Wind Data Hub). 
 2. The reson why we need to care about the atmospheric conditions is because the intensity and the behaviors of the atmospheric movement is important to know for wind turbines and researching about the correlation between power outages and extreme weather events 
 
 ###### What?:
-1. The goal of this presentation is to show the methods and results I have devloped from analyzing musltiple CORSAIR datasets. 
-2. At the end of the presentation I hope that I can share what I know so far and get feedback on what I can do better in terms of looking through these datasets to help find extreme weather events impacting power and energy infrastruture.
+1. The goal of this presentation is to show the methods and results I have devloped from analyzing multiple CORSAIR datasets. 
+2. At the end of the presentation I hope that I get feedback on what I can do better in terms of looking through these datasets to help find extreme weather events impacting power and energy infrastruture.
 
 ##### How? 
-1. As mentioned before the datasets are accessed through the NLR WDH from site 40'ds lidar and doppler radars and the dataset provided from the FC M2 met tower.
-2. Pulling the dataset onto a python coding format (virtual studio) and create code that can format the pulled data into an xarray that can be used to make plots and find specifc datapoints in the recorded time.
-3. So far the majority of the analysis I have done has onlt been for a single day (24-hour) period, but (maybe) in this presentation I can also show and example of multi-day atmospheric boundary layer analysis to show that these methods could also be used in a longer-term analysis.
+1. As mentioned before the datasets are accessed through the NLR WDH from site 40's lidar and doppler radars and the dataset provided from the FC M2 met tower.
+2. Pulling the dataset onto a python coding format (virtual studio) and create code that can format the pulled data into an xarray used for plot creation
+3. So far the majority of the analysis I have done has only been for a single day (24-hour) period, but (maybe) in this presentation I can also show and example of multi-day atmospheric boundary layer analysis to show that these methods could also be used in a longer-term analysis.
 
 ###### The Cautions
 1. It goes without saying that data analysis through remote sensing does have some of its faults.
@@ -50,8 +50,15 @@
 1. The September 19,2026 just M2 analysis
 2. The April 12, 2026 compliation of datasets
 
-###### Methods to find the Extreme events 
+###### Methods to find the Extreme (Intresting) Events 
 1. M2's Richardson Number plottted as a time line
 2. crating a bi-virate KDE gaussain contour line plot with the raw scatter data plotted as an over lay, and using the points that are outside of the KDE ellipises to indicate extreme/ low-probability events
     (i) Then along the timeline of the seprate bi-virate variable (i.e., temperature and wind speed) highlight the time *when* these low probability happened and see if they correlate to the low number on the richardson number time line.
 3. When having the time corrdinate matching up between the M2 and the s40.lidar you can create a list of of when the highest windspeeds are happening at their respective heights and see if there is a match of high wind speeds at different heights happening at the same time. 
+
+###### Discussion and Conclusion
+1. When it comes to weather and atmospheric analysis, it is always a good rule of thumb to look at the datasets across diffent remote sensing instruments because they show agreement or "help eachother" out by either filling in the gaps of another dataset or expose the "poor quality" data of another (i.e., temperature between the M2 tower and the s40.assist.tropoe) 
+2. However the biggest issue when it comes to analyzing atmospheric behavior between multiple remote sensing instruments is that some of them will have differnt "recording" periods or will have days worth of missing data when the other intruments have recorded data. So if you would want to ananlyze the atmosphere on a *specific* day you would have to look through the WDH or the .nc files log of your desired instrtruments to see if they all have some data on the day you want to analyze.
+    (i) This could also lead to a conversation on how doing an observation over a range of days versus a single day might be more benificail to not have to worry as much about this issue. 
+    (ii) Still, if there was some way to get access to a report of when certain instruments were offline or malfunctioning then it would be helpful to get an idea of of what to expect when it comes to plotting the data at a certain date and time.
+3. I hope that the methods and resouces I talked about today give some insight and inspiration on methods we can use indicate extreme weather events that could cause issues to wind turbines and the power grid. 
